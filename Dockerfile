@@ -7,7 +7,18 @@ MAINTAINER jlabocki@redhat.com
 RUN date > /root/date
 
 #Install required packages
-RUN yum install python-pbr git python-devel python-setuptools python-pip gcc gcc-devel libxml2-python libxslt-python python-lxml sqlite python-repoze-lru -y
+RUN yum install -y python-pbr
+RUN yum install -y git
+RUN yum install -y python-devel
+RUN yum install -y python-setuptools
+RUN yum install -y python-pip
+RUN yum install -y gcc
+RUN yum install -y gcc-devel
+RUN yum install -y libxml2-python
+RUN yum install -y libxslt-python
+RUN yum install -y python-lxml
+RUN yum install -y sqlite
+RUN yum install -y python-repoze-lru
 #RUN yum install python-sqlite2 python-lxml python-greenlet-devel python-ldap sqlite-devel openldap-devel -y
 
 #Clone Keystone and setup
